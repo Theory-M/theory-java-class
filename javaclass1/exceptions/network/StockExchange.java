@@ -8,22 +8,22 @@ public class StockExchange {
 
 
     // constructor StockExchangeCreationException -- RuntimeException
-    // throw exception ReadDataException -- RuntimeException
+    // throw exc ReadDataException -- RuntimeException
     // random % 2 -- parzyste lub nie -- raz wyjatek raz nie
     //
 
     public String readData() throws ReadDataException {
         if (random.nextInt(100) % 2 == 0) {
-            throw new ReadDataException("readData exception");
+            throw new ReadDataException("readData exc");
         } else
-            System.out.println("there was no exception in readData");
+            System.out.println("there was no exc in readData");
         return "data";
     }
     public StockExchange() throws StockExchangeCreationException {
         if (random.nextInt(100) % 2 == 1) {
-            throw new StockExchangeCreationException("stockExchange exception");
+            throw new StockExchangeCreationException("stockExchange exc");
         } else {
-            System.out.println("there was no exception in StockExchange");
+            System.out.println("there was no exc in StockExchange");
         }
     }
 
@@ -37,7 +37,7 @@ public class StockExchange {
         String readData = null;
         try {
             stockExchange.readData();
-            System.out.println("this will only print if method doesn't catch exception");
+            System.out.println("this will only print if method doesn't catch exc");
         }catch (ReadDataException exc){
             readData = "";
         }finally {

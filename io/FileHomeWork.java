@@ -53,7 +53,7 @@ public class FileHomeWork {
         try {
             Files.write(Paths.get("/home/theory/test/krotki"), "\n *".getBytes(), StandardOpenOption.APPEND);
         }catch (IOException e) {
-            //exception handling left as an exercise for the reader
+            //exc handling left as an exercise for the reader
         }
     }
 }

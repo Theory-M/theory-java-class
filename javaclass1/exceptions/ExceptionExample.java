@@ -8,7 +8,7 @@ public class ExceptionExample {
         // na throwMyException Alt + Enter i lepiej uzyc drugiej opcji
             object.throwMyException();
             //ta linijka sie nie wykona:
-            System.out.println("this will only print if I do not ask it to throw exception -- jesli zakomentuje throw exception w MyExceptionThrower");
+            System.out.println("this will only print if I do not ask it to throw exc -- jesli zakomentuje throw exc w MyExceptionThrower");
 //        } catch (MyException e) {
 //            e.printStackTrace();
 //        }

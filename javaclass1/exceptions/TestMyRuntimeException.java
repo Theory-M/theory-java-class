@@ -3,7 +3,7 @@ package pl.learn.theory.javaclass1.exceptions;
 public class TestMyRuntimeException {
 
     public static void main(String[] args) {
-        throw new MyRuntimeException("throwing runtime exception");
+        throw new MyRuntimeException("throwing runtime exc");
 
 //        try {
 //            // poprowadzi mnnie po calej drodze bledu czyli ze cos wylecialo na 1 poziomie

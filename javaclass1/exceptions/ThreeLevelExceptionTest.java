@@ -32,7 +32,7 @@ public class ThreeLevelExceptionTest {
             level3();
             // to sie wyswietli tylko jesli nie wyrzuci wyjatku :
             System.out.println("level2() after call to level3()");
-            //metoda wyrzuci TYLKO jeden exception -- pierwszy ktory sie trafi
+            //metoda wyrzuci TYLKO jeden exc -- pierwszy ktory sie trafi
         } catch (MyNewException exc) {
             exc.printStackTrace();
         } catch (MyException esce){
@@ -58,7 +58,7 @@ public class ThreeLevelExceptionTest {
         if (counter % 2 == 1){
             throw new MyException("Problem on level 3");
         } else if(counter==4){
-            //jesli chce nowy exception, to nowa sciezka lapania z else if powyzej -- a potem trzeba wyjatek obsluzyc gdzies na sciezce
+            //jesli chce nowy exc, to nowa sciezka lapania z else if powyzej -- a potem trzeba wyjatek obsluzyc gdzies na sciezce
             throw new MyNewException("Problem on level 3()");
         }
 
