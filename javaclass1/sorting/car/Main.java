@@ -65,6 +65,11 @@ public class Main {
 
         cars.sort((o1,o2) -> o1.getColor().compareTo(o2.getColor()));
 
+        // concatowanie wstep do powtorzenia przerabiania sklejania na lambdy
+        cars.get(0).concatTwoBrands(cars.get(3));
+
+        // tak to co powyzej za pomoca lamdby -- ale nie da sie przeslac wiecej niz jednego domyslnego obiektu do stworzenia polaczenia
+        cars.get(0).doSomething(o -> System.out.println(o.getBrand()));
 
     }
 }
